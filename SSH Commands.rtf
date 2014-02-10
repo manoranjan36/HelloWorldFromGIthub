@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 MSP-Rajnish:vHelloWorld msp$ cd ~/.ssh\
+MSP-Rajnish:.ssh msp$ ls\
+github_rsa	github_rsa.pub\
+MSP-Rajnish:.ssh msp$ ssh-keygen -t rsa -C "vinodkumar.radhakrishnan@cognizant.com"\
+Generating public/private rsa key pair.\
+Enter file in which to save the key (/Users/msp/.ssh/id_rsa): \
+Enter passphrase (empty for no passphrase): \
+Enter same passphrase again: \
+Your identification has been saved in /Users/msp/.ssh/id_rsa.\
+Your public key has been saved in /Users/msp/.ssh/id_rsa.pub.\
+The key fingerprint is:\
+0f:ee:52:e4:e0:2f:8e:3f:78:a0:fb:31:ad:04:10:da vinodkumar.radhakrishnan@cognizant.com\
+The key's randomart image is:\
++--[ RSA 2048]----+\
+|.                |\
+|.o               |\
+|o E              |\
+| .    . .        |\
+|  .  . +S        |\
+|   .....oo       |\
+|   .+o.o. .      |\
+|  ...==..        |\
+|  .o++o+.        |\
++-----------------+\
+MSP-Rajnish:.ssh msp$ pbcopy < ~/.ssh/id_rsa.pub\
+MSP-Rajnish:.ssh msp$ ssh -T git@github.com\
+ssh: connect to host github.com port 22: Connection refused\
+MSP-Rajnish:.ssh msp$ \
+}
